@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - Is an entry point for c programs
-*The main function prints out string and return 0 errors when successfule
+*return - returns 0 if the program is successful
 */
 int main(void)
 {
