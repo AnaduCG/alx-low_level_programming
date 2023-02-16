@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	char = var_car;
-	int = var_int;
-	long int = var_lint;
-	long long int =	var_llint;
-	float = var_float;
+	char var_car;
+	int var_int;
+	long int var_lint;
+	long long int var_llint;
+	float var_float;
 	
 	printf("Size of a char: %s byte(s)\n", sizeof(var_char));
 	printf("Size of a int: %d byte(s)\n", sizeof(var_int));
