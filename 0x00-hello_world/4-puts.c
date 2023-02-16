@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - is an entry point for c progrms
- *return: returns 0 errors if successful
+ *Return: returns 0 errors if successful
  */
 
 int main(void)
