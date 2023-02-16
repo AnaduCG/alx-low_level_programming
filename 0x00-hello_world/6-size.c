@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  *main - is the entry path in C programming
- *return: returns 0 errors if there is none
+ *Return: returns 0 errors if there is none
  */
 int main(void)
 {
