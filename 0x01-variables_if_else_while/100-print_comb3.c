@@ -18,7 +18,7 @@ int main(void)
 			{
 				putchar(48 + i);
 				putchar(48 + x);
-				if (i == 8 && x ==9)
+				if (i == 8 && x == 9)
 				{
 				}
 				else
