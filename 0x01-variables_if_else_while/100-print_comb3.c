@@ -7,9 +7,12 @@
 
 int main(void)
 {
-	for (int i = 0; i < 9; i++)
+	int i;
+	int x;
+
+	for (i = 0; i < 9; i++)
 	{
-		for (int x = 1; x <= 9; x++)
+		for (x = 1; x <= 9; x++)
 		{
 			if (x > i)
 			{
