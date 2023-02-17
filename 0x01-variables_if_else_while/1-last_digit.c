@@ -3,7 +3,7 @@
 #include <time.h>
 /* Checking conditions in c */
 
-/*
+/**
  *main - Entry point
  *Return: Always 0 (success)
  */
