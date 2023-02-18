@@ -18,7 +18,7 @@ int main(void)
 			{
 				for (d = 0; d <= 9; d++)
 				{
-					if (a == b && a == c && a == d)
+					if (c == 0 && d == 0)
 						continue;
 					if (b > 8)
 					{
