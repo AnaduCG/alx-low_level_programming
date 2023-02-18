@@ -25,6 +25,8 @@ int main(void)
 					}
 					else
 					{
+					if (a <= 1 && b <= 1 && c <= 1)
+						continue;
 					putchar(48 + a);
 					putchar(48 + b);
 					putchar(' ');
