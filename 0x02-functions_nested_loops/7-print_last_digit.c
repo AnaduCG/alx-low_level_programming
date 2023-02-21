@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_last_digit: getting the last digit of r
+ *print_last_digit - getting the last digit of r
  *@last: the lsat digit of r
  *@r: parameter of the function
  *Return: returns the last digit
