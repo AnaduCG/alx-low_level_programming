@@ -1,4 +1,4 @@
-lude <ctype.h>
+#include <ctype.h>
 #include "main.h"
 /**
  *_isalpha - checks the character case of c
