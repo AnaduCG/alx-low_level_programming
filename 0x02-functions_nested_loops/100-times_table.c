@@ -7,20 +7,26 @@
 
 void print_times_table(int n)
 {
-	int count, times;
-	for (count = 0; count <= n; count++)
+	int count, times, n = 12;
+
+	if (n > 15 || n < 0)
 	{
-		for (times = 0; times <= n; times++)
+	}
+	else{
+		for (count = 0; count <= n; count ++)
 		{
-			if (times != n)
+			for (times = 0; times <= n; times ++)
 			{
-				printf ("%d,\t", times * count);
+				if (times != n)
+				{
+					printf("%d, ", times * count);
+				}
+				else
+				{
+					printf("%d", times * count);
+				}
 			}
-			else
-			{
-				printf("%d", times * count);
-			}
+			printf("\n");
 		}
-		_putchar('\n');
 	}
 }
