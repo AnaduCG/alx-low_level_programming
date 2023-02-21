@@ -40,9 +40,9 @@ void print_times_table(int n)
 				else
 				{
 					printf("%d", times * count);
-
+				}
+				printf("\n");
 			}
-			printf("\n");
 		}
 	}
 }
