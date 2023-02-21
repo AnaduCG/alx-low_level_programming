@@ -1,17 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - entry point in C programming
+ *print_alphabet_x10 - printing a-z * 10
  *Return: always 0
  */
-
-void print_alphabet_x10(void);
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
 
 void print_alphabet_x10(void)
 {
