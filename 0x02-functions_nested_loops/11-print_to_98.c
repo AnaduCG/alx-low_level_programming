@@ -5,9 +5,11 @@
  */
 void print_to_98(int n)
 {
+	int count;
+
 	if (n != 0)
 	{
-		for (int count = 0; count <= 98; count++)
+		for (count = 0; count <= 98; count++)
 		{
 			for (n; n <= count; n++)
 			{
