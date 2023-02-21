@@ -29,20 +29,18 @@ void print_times_table(int n)
 					else if (table > 9 && table < 100)
 					{
 						printf("%d,  ", table);
-
 					}
 					else if (table > 99 && table < 1000)
 					{
 						printf("%d, ", table);
-
 					}
 				}
 				else
 				{
 					printf("%d", times * count);
 				}
-				printf("\n");
 			}
+			printf("\n");
 		}
 	}
 }
