@@ -8,6 +8,5 @@
 
 int add(int a, int b)
 {
-	int solve = (a + b);
-	return (solve);
+	return (a + b);
 }
