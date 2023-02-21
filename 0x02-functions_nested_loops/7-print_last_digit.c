@@ -8,6 +8,12 @@
 
 int print_last_digit(int r)
 {
-	_putchar(abs((r) % 10) + 48);
-	return (r % 10);
+	int last = (r % 10);
+
+	if (last < 0)
+	{
+		last = (-1 * last);
+	}
+	_putchar(last + 48);
+	return (last);
 }
