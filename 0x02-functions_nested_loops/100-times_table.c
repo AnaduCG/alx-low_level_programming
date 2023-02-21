@@ -24,16 +24,16 @@ void print_times_table(int n)
 				{
 					if (table >= 0 && table < 10)
 					{
-						printf("%d,...", table);
+						printf("%d,   ", table);
 					}
 					else if (table > 9 && table < 100)
 					{
-						printf("%d,..", table);
+						printf("%d,  ", table);
 
 					}
 					else if (table > 99 && table < 1000)
 					{
-						printf("%d,.", table);
+						printf("%d, ", table);
 
 					}
 				}
