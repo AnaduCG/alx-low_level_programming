@@ -19,7 +19,7 @@ void print_times_table(int n)
 			{
 				if (times != n)
 				{
-					printf("%d, ", times * count);
+					printf("%d,   ", times * count);
 				}
 				else
 				{
