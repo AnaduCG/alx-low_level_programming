@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include "main.h"
 /**
  *_islower - checks the character case of c
