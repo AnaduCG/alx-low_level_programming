@@ -6,6 +6,6 @@
 
 int add(int a, int b)
 {
-	int solve = (a - b);
+	int solve = (a + b);
 	return (solve);
 }
