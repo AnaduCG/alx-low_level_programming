@@ -1,14 +1,19 @@
 #include "main.h"
 /**
- *main - entry point in C programming
+ *print_alphabet - 
  *Return: always 0 (successful)
  */
 
 void print_alphabet(void)
 {
-	char alphabet = 'a';
-	while (alphabet <= 'z')
+	char alphabet;
+	int count = 0;
+	for (count ; count < 10; count++)
 	{
-		_putchar(alphabet++);
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+		{
+			_putchar(alphabet++);
+		}
+		_puchar('\n');
 	}
 }
