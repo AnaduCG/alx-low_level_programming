@@ -7,22 +7,21 @@
 
 int main(void)
 {
-	ungsigned long int first = 0, second = 1, next, i;
-
-	for (i = 1; i < 50; i++)
+	unsigned long int num1 = 0, num2 = 1, count;
+	for (count = 0; count <= 50; count++)
 	{
-		next = first + second;
-		printf("%d ", next);
-		first = second;
-		second = next;
-		if (i == 49)
+		int sum = (num1 + num2);
+		if (count != 50)
 		{
-			putchar('\n');
+			printf("%lu, ", sum);
 		}
 		else
 		{
-			printf(", ");
+			printf("%lu", sum);
 		}
+		num1 = num2;
+		num2 = sum;
+		putchar('\n');
 	}
 
 	return (0);
