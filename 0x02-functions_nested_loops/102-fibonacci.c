@@ -7,17 +7,23 @@
 
 int main(void)
 {
-	int n = 50, first = 1, second = 2, next, i;
+	int first = 0, second = 1, next, i;
 
-	printf("%d %d ", first, second);
-	for (i = 3; i <= n; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		next = first + second;
 		printf("%d ", next);
 		first = second;
 		second = next;
+		if (i == 50)
+		{
+			putchar('\n');
+		}
+		else
+		{
+			printf(", ");
+		}
 	}
-	printf("\n");
 
 	return (0);
 }
