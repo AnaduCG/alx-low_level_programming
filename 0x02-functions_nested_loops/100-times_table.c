@@ -5,42 +5,37 @@
  *@n: a function parameter
  */
 
-void print_times_table(int n)
+void times_table(void)
 {
-	int count, times;
+	int row, mult, out, div, last;
 
-	if (n > 15 || n < 0)
+	for (row = 0; row <= 9; row++)
 	{
-	}
-	else
-	{
-		for (count = 0; count <= n; count++)
+		for (mult = 0; mult <= 9; mult++)
 		{
-			for (times = 0; times <= n; times++)
-			{
-				int table = (times * count);
+			out = row * mult;
+			div = out / 10;
+			last = out % 10;
 
-				if (times != n)
-				{
-					if (table >= 0 && table < 10)
-					{
-						printf("%d,   ", table);
-					}
-					else if (table > 9 && table < 100)
-					{
-						printf("%d,  ", table);
-					}
-					else if (table > 99 && table < 1000)
-					{
-						printf("%d, ", table);
-					}
-				}
-				else
-				{
-					printf("%d", times * count);
-				}
+			if (mult == 0)
+			{
+				_putchar('0');
 			}
-			printf("\n");
+			else if (out < 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(last + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(div + '0');
+				_putchar(last + '0');
+			}
 		}
+		_putchar('\n');
 	}
 }
