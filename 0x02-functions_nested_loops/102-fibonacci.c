@@ -8,9 +8,10 @@
 int main(void)
 {
 	unsigned long int num1 = 0, num2 = 1, count;
-	for (count = 0; count <= 50; count++)
+	for (count = 1; count <= 50; count++)
 	{
 		unsigned long int sum = (num1 + num2);
+
 		if (count != 50)
 		{
 			printf("%lu, ", sum);
@@ -21,7 +22,7 @@ int main(void)
 		}
 		num1 = num2;
 		num2 = sum;
-		putchar('\n');
+
 	}
 
 	return (0);
