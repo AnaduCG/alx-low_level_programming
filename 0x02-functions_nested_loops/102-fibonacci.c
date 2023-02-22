@@ -24,6 +24,7 @@ int main(void)
 		num2 = sum;
 
 	}
+	putchar('\n');
 
 	return (0);
 }
