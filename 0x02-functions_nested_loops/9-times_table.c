@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *print_times_table - multiplications of n
- *@n: a function parameter
+ *times_table - multiplications of n
  */
 
 void times_table(void)
