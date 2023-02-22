@@ -24,8 +24,10 @@ void jack_bauer(void)
 					putchar(m2 + '0');
 					if (h1 == 2 && h2 == 3 && m1 == 5 && m2 == 9)
 					{
+						continue;
 					}
-					else{
+					else
+					{
 						putchar('\n');
 					}
 				}
