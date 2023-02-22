@@ -1,22 +1,15 @@
 #include "main.h"
 
 /**
- *void positive_or_negative - checks if an int is positive negative or zero
- *@i: int variable
+ *main - entry point
+ *Return: always 0
  */
 
-void positive_or_negative(int i)
+int main(void)
 {
-	if (i > 0)
-	{
-		printf("%d is positive",i);
-	}
-	else if (i < 0)
-	{
-		printf("%d is negative",i);
-	}
-	else
-	{
-		printf("%d is zero",i);
-	}
+	int i = 0;
+
+	positive_or_negative(i);
+
+	return (0);
 }
