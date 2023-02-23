@@ -3,6 +3,7 @@
 /**
 *_isdigit - checks for digits
 *@c: variable type of int
+*Return: always 0
 */
 
 int _isdigit(int c)

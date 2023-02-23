@@ -4,6 +4,7 @@
 /**
 *_isupper - checks letter case
 *@c: variable type int
+*Return: always 0
 */
 
 int _isupper(int c)

@@ -2,14 +2,16 @@
 /**
  *print_diagonal - prints diagonal line
  *@n: variable type of int
-i */
+ */
 
 void print_diagonal(int n)
 {
 	int dgnl, spaces;
 
-	for (dgnl = 1; dgnl <= n; ++dgnl) {
-		for (spaces = 1; spaces <= dgnl; ++spaces) {
+	for (dgnl = 1; dgnl <= n; ++dgnl)
+	{
+		for (spaces = 1; spaces <= dgnl; ++spaces)
+		{
 			_putchar(' ');
 		}
 		_putchar('\\');
