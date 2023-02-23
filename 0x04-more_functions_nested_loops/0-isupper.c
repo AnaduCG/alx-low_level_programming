@@ -1,6 +1,11 @@
 #include "main.h"
 #include <ctype.h>
 
+/**
+*_isupper - checks letter case
+*@c: variable type int
+*/
+
 int _isupper(int c)
 {
 	if (isupper(c))
