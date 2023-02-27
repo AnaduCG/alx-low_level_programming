@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+/**
+ *puts_half - prints half
+ *
+ * @str: pointer parameter variable of type int
+ */
+void puts_half(char *str)
+{
+	int i, len, half;
+
+	len = (strlen(str));
+	half = (len / 2);
+	for (i = 0; i < len; i++)
+	{
+		if(i >= half)
+			_putchar(str[i]);
+	}
+	_putchar('\n');
+}
