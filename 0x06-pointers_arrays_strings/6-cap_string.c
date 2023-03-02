@@ -6,32 +6,22 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i, len = strlen(str);
 
-	while (str[i])
+	for (i = 0; i < len; i++)
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
+		if(i == 0 || isspace(str[i - 1]) ||str[i - 1] == ','
+				|| str[i - 1] == ';' ||str[i - 1] == '.'
+				|| str[i - 1] == '!' ||str[i - 1] == '?'
+				|| str[i - 1] == '"' ||str[i - 1] == '('
+				|| str[i - 1] == ')' ||str[i - 1] == '{'
+				|| str[i - 1] == '}')
 		{
-			i++;
-		}
-
-			if (str[i - 1] == ' '
-			|| str[i - 1] == '\t'
-			|| str[i - 1] == '\n'
-			|| str[i - 1] == ','
-			|| str[i - 1] == ';'
-			|| str[i - 1] == '.'
-			|| str[i - 1] == '!'
-			|| str[i - 1] == '?'
-			|| str[i - 1] == '"'
-			|| str[i - 1] == '('
-			|| str[i - 1] == ')'
-			|| str[i - 1] == '{'
-			|| str[i - 1] == '}')
+			if (islower(str[i]))
 			{
-				str[i] -= 32;
+				str[i] = toupper(str[i]);
 			}
-		i++;
+		}
 	}
 	return (str);
 }
