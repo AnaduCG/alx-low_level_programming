@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *reverse_array - concatenates strings
+ *reverse_array - reverse arrays
  *@a: pointer variable parameter of type int
  *@n: pointer variable parameter of type int
  */
