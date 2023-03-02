@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ *_strcat - concatenates strings
+ *@a: pointer variable parameter of type int
+ *@n: pointer variable parameter of type int
  */
 
 void reverse_array(int *a, int n)
