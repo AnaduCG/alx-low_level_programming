@@ -10,11 +10,11 @@ char *cap_string(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		if(i == 0 || isspace(str[i - 1]) ||str[i - 1] == ','
-				|| str[i - 1] == ';' ||str[i - 1] == '.'
-				|| str[i - 1] == '!' ||str[i - 1] == '?'
-				|| str[i - 1] == '"' ||str[i - 1] == '('
-				|| str[i - 1] == ')' ||str[i - 1] == '{'
+		if (i == 0 || isspace(str[i - 1]) || str[i - 1] == ','
+				|| str[i - 1] == ';' || str[i - 1] == '.'
+				|| str[i - 1] == '!' || str[i - 1] == '?'
+				|| str[i - 1] == '"' || str[i - 1] == '('
+				|| str[i - 1] == ')' || str[i - 1] == '{'
 				|| str[i - 1] == '}')
 		{
 			if (islower(str[i]))
