@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strcat - concatenates strings
+ *reverse_array - concatenates strings
  *@a: pointer variable parameter of type int
  *@n: pointer variable parameter of type int
  */
@@ -9,10 +9,10 @@ void reverse_array(int *a, int n)
 {
 	int i, temp = 0;
 
-	for (i = (n - 1); i < (n / 2); i-)
+	for (i = (n - 1); i < (n / 2); i--)
 	{
 		temp = a[i];
-		a[i] = a[n -1 - i];
-		a[n -1 - i] = temp;
+		a[i] = a[n - 1 - i];
+		a[n - 1 - i] = temp;
 	}
 }

@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *_strcat - concatenates strings
+ *_strncat - concatenates strings
  *@dest: pointer variable parameter of type char
  *@src: pointer variable parameter of type char
  *@n: variable parameter of type int
+ *Return: return dest
  */
 
 
