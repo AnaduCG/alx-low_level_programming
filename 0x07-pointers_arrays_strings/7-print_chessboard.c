@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *print_chessboard - prints chess board
+ *@a: pointer parameter of type char array
  */
 void print_chessboard(char (*a)[8])
 {
