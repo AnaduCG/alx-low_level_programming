@@ -3,7 +3,7 @@
  *_strchr - gets the first occursnce of a character
  *@s: pointer parameter variable of type char
  *@c: parameter variable of type char
- *
+ *Return: returns a if success and NULL otherwise
  */
 char *_strchr(char *s, char c)
 {
