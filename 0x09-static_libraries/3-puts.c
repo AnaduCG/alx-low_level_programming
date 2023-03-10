@@ -1,12 +1,10 @@
-#include <stdio.h>
 #include "main.h"
+/**
+ *_puts - prints out string
+ *@str: pointer variable of type char
+ */
 
-void _puts(char *s)
+void _puts(char *str)
 {
-    while (*s)
-    {
-        _putchar(*s);
-        s++;
-    }
-    _putchar('\n');
+	puts(str);
 }

@@ -1,3 +1,14 @@
-#include <stdio.h>
 #include "main.h"
-char *_strpbrk(char *s, char *accept);
+/**
+ *_strpbrk - locates the first occurance of a character
+ *@s: pointer parameter variable of type char
+ *@accept: pointer parameter variable of type char
+ *Return: returns rt
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	char *rt = strpbrk(s, accept);
+
+	return (rt);
+}

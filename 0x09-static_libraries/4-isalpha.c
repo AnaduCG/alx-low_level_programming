@@ -1,3 +1,19 @@
-#include <stdio.h>
+#include <ctype.h>
 #include "main.h"
-int _isalpha(int c);
+/**
+ *_isalpha - checks the character case of c
+ *Return: 1 if an alphabet and 0 otherwise
+ *@c: is a parameter of the function
+*/
+
+int _isalpha(int c)
+{
+	if (islower(c) || isupper(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
