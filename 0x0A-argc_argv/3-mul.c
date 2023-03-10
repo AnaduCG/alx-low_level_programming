@@ -7,9 +7,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int index, num = 1;
+	int index, num;
 
-	if (argc < 2 || argc > 3)
+	if (argc == 1 || argc == 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (index = 1;  index < 3; index++)
 		{
-			num = num * atoi(argv[index]);
+			num *= atoi(argv[index]);
 		}
 		printf("%d\n", num);
 	}
