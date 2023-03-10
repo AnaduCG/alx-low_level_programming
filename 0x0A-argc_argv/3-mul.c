@@ -23,14 +23,7 @@ void multiply(char *a, char *b)
 
 void _error(char *e)
 {
-	if (*e)
-	{
-		putchar(*e);
-		_error(e + 1);
-	}
-	else
-		putchar('\n');
-
+	printf("%s\n", e);
 }
 /**
  * main - entry point in c programming
@@ -42,7 +35,7 @@ int main(int argc, char *argv[])
 {
 	char e[] =  "Error";
 
-	if (argc <= 1)
+	if (argc < 2)
 	{
 		_error(e);
 		return (1);
