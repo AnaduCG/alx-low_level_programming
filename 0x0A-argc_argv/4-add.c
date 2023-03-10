@@ -8,25 +8,33 @@
 
 int main(int argc, char *argv[])
 {
-	int index, num = 0;
-	char e[] = "Error";
+	int sum = 0, num, index1, index2;
 
 	if (argc == 1)
 	{
 		printf("%d\n", argc - 1);
+		return (0);
 	}
-	else
+
+	for (index1 = 1; index1 < argc; index1++)
 	{
-		for (index = 1; index < argc; index++)
+		for (index2 = 0; argv[index1][index2]; index2++)
 		{
-			num = num + atoi(argv[index]);
-				if (!isdigit(num))
-				{
-					printf("%s\n", e);
-					return (1);
-				}
+			if (!isdigit(argv[index1][index2]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		printf("%d\n", num);
+		num = atoi(argv[index1]);
+		if (num < 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += num;
 	}
+
+	printf("%d\n", sum);
 	return (0);
 }
