@@ -9,17 +9,20 @@ int main(int argc, char *argv[])
 {
 	char e[] =  "Error";
 	int index, num = 1;
+
 	if (argc < 2)
 	{
 		printf("%s\n", e);
 		return (1);
 	}
-
-	for (index = 1;  index < 3; index ++)
+	if (argc < 4)
 	{
-		num = num * atoi(argv[index]);
+		for (index = 1;  index < 3; index++)
+		{
+			num = num * atoi(argv[index]);
+		}
+		printf("%d\n", num);
 	}
-	printf("%d\n", num);
 	return (0);
 }
 
