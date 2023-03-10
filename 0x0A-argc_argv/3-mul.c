@@ -1,46 +1,25 @@
 #include "main.h"
 /**
- * multiply - multiplies two integers
- *@a: pointer parameter of type char
- *@b: pointer parameter of type char
- *Return: always 0
- *
- *
- *
- */
-void multiply(char *a, char *b)
-{
-	int num = atoi(a) * atoi(b);
-
-	printf("%d\n", num);
-}
-
-/**
- *_error - outputs error to the main function
- *@e: pointer parameter of type char
- *Return: always 0
-*/
-
-void _error(char *e)
-{
-	printf("%s\n", e);
-}
-/**
  * main - entry point in c programming
  *@argc: holds the size of arguments passed in terminal
- *@argv: holds tht arguments passed in terminal
- *Return: always 0
+ *@argv: holds that arguments passed in terminal
+ *Return: retuns 1 if (!(argc > 1)) and 0 otherwise
  */
 int main(int argc, char *argv[])
 {
 	char e[] =  "Error";
-
+	int index, num = 1;
 	if (argc < 2)
 	{
-		_error(e);
+		printf("%s\n", e);
 		return (1);
 	}
-	multiply(argv[1], argv[2]);
+
+	for (index = 1;  index < 3; index ++)
+	{
+		num = num * atoi(argv[index]);
+	}
+	printf("%d\n", num);
 	return (0);
 }
 
