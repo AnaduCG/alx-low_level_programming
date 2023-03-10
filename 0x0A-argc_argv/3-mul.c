@@ -7,12 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	char e[] =  "Error";
 	int index, num = 1;
 
-	if (argc < 2)
+	if (argc < 2 || argc > 3)
 	{
-		printf("%s\n", e);
+		printf("Error\n");
 		return (1);
 	}
 	if (argc < 4)
