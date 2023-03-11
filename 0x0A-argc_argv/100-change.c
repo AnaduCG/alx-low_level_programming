@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, quarters, totalCoins, dimes, nickels = 0, twopences, pennies;
+	int cents;
 
 	if (argc != 2)
 	{
@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	printf("%d\n", totalCoins);
+	printf("%d\n", cents);
 	return (0);
 }
