@@ -9,13 +9,15 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, mem;
+	int i, *mem;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
+
 	mem = malloc(sizeof(char) * ac);
+
 	if (mem == NULL)
 	{
 		return (NULL);
