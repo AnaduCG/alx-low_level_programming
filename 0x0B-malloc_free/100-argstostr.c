@@ -9,7 +9,8 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, *mem;
+	int i;
+	char *mem;
 
 	if (ac == 0 || av == NULL)
 	{
