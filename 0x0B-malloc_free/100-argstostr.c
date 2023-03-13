@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; i < ac; i++)
 	{
-		mem[i] = av[i];
+		*mem[i] = *av[i];
 		printf("%s", mem[i]);
 	}
 	return(*mem);
