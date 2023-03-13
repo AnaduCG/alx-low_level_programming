@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *str_concat - concatenates two strings
+ *@s1: char variable type
+ *@s2: char variable type
+ *Return: returns the variable with the combined strings
+ *	and returns NULL if malloc returns null value
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -31,5 +32,6 @@ char *str_concat(char *s1, char *s2)
 
 	strcpy(combined, s1);
 	strcat(combined, s2);
+
 	return (combined);
 }
