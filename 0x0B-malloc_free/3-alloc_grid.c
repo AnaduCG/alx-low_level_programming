@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *alloc_grid - allocates memory to a 2 dimensional array
+ *@width: int parameter(width of the given array)
+ *@height: int parameter(height of the given array)
+ *Return: NULL if with 0r height <= 0 or arr == NULL and 
+ *	on success returns arr
  *
  */
 int **alloc_grid(int width, int height)
