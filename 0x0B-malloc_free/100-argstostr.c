@@ -28,5 +28,5 @@ char *argstostr(int ac, char **av)
 		mem[i] = av[i];
 		printf("%s", mem[i]);
 	}
-	return(mem);
+	return(*mem);
 }
