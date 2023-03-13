@@ -3,7 +3,7 @@
  *alloc_grid - allocates memory to a 2 dimensional array
  *@width: int parameter(width of the given array)
  *@height: int parameter(height of the given array)
- *Return: NULL if with 0r height <= 0 or arr == NULL and 
+ *Return: NULL if with 0r height <= 0 or arr == NULL and
  *	on success returns arr
  *
  */
@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	arr = malloc(sizeof(int*) * height);
+	arr = malloc(sizeof(int *) * height);
 
 	if (arr == NULL)
 	{
@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (hi = 0; hi < height; hi++)
 	{
-		
+
 		for (wi = 0; wi < width; wi++)
 		{
 			arr[hi][wi] = 0;
