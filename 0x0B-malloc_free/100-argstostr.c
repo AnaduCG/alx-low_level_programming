@@ -9,7 +9,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, len;
 	char **mem;
 
 	if (ac == 0 || av == NULL)
@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	mem = malloc(sizeof(char*) * ac);
+	*mem = malloc(sizeof(char*) * len);
 
 	if (mem == NULL)
 	{
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		*mem[i] = *av[i];
-		printf("%s", mem[i]);
+		/*printf("%s", mem[i]);*/
 	}
 	return(*mem);
 }
